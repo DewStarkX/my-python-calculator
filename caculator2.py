@@ -8,21 +8,24 @@ def divide(a, b):
         return "can't just break the universe like that. try again."
     else:
         return a / b
-
     
 calculator_actions = {
     1: add,
     2: subtract,
     3: multiply,
-    4: divide
+    4: divide,
+    5: exit
 
 }
 
 while True: 
-    print("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division")
+    print("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n5. I want to leave")
 
     try:
         choice = int(input("so.... which one?: "))
+        if choice == 5:
+            print("Good")
+            break
     except ValueError:
         print("This is all we have")
         continue
@@ -45,4 +48,3 @@ while True:
 
     result = action(a, b)
     print(f"===== Result: {result} =====")
-    break
