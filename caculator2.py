@@ -7,7 +7,7 @@ def divide(a, b):
     if b == 0:
         return "can't just break the universe like that. try again."
     else:
-        return a / b5 #Don't mind this and i will leave it here. if you want to use this for whatever reason, fix it yourself.
+        return a / b
     
 calculator_actions = {
     1: add,
